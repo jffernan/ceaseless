@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Ceaseless</title>
+    <title>Ceaseless DEMO CMS</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -10,6 +10,26 @@
   </head>
 
   <body>
-    <%= yield %>
+    <nav>
+      <%= link_to "Home", root_path %>
+
+      <% flash.each do |name, msg| -%>
+        <strong><%= content_tag :div, msg, class: name %></strong>
+      <% end -%>
+    </nav>
+    <div class = "container">
+      <h1>Ceaseless DEMO CMS</h1>
+      <%= yield %>
+      <footer>
+        <%= link_to "Back", root_path %>
+
+      <br></br>
+      <a target="_blank"
+        rel="noopener noreferrer"
+        href="https://github.com/jffernan/ceaseless">
+        *Visit My GitHub To View Code*
+      </a>
+      </footer>
+    </div>
   </body>
 </html>
