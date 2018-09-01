@@ -1,4 +1,4 @@
-# my-rails-store
+# Ceaseless DEMO CMS
 
 Welcome to Ceaseless DEMO CMS website. 
 
