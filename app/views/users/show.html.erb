@@ -1,14 +1,8 @@
-<p id="notice"><%= notice %></p>
-
 <p>
-  <strong>Name:</strong>
-  <%= @user.name %>
+<h1>User Page</h1>
+  <ul>
+    <li><strong>Name: </strong><%= @user.name %></li>
+    <li><strong>Email: </strong><%= @user.email %></li>
+    <li><%= link_to "Change Account Info", edit_user_path(@user) %></li>
+</ul>
 </p>
-
-<p>
-  <strong>Email:</strong>
-  <%= @user.email %>
-</p>
-
-<%= link_to 'Edit', edit_user_path(@user) %> |
-<%= link_to 'Back', users_path %>
