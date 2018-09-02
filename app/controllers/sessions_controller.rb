@@ -6,7 +6,7 @@ class SessionsController < ApplicationController
     user = User.find_by(email: params[:email])
     if user&.authenticate(params[:password])
       session[:user_id] = user.id
-      redirect_to widgets_path
+      redirect_to user
     else
       redirect_to login_url, alert: "Invalid user/password combination"
     end
@@ -16,5 +16,5 @@ class SessionsController < ApplicationController
     session[:user_id] = nil
     redirect_to login_path, notice: "Logged out"
   end
-  
+
 end
