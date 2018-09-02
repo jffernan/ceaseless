@@ -18,18 +18,13 @@
       <% end -%>
     </nav>
     <div class = "container">
-      <h1>Ceaseless DEMO CMS</h1>
+
       <%= yield %>
       <footer>
         <%= link_to "Back", root_path %> |
-        <%= link_to "Log In", login_path %> |
+
         <%= link_to "About", about_path %>
       <br></br>
-      <a target="_blank"
-        rel="noopener noreferrer"
-        href="https://github.com/jffernan/ceaseless">
-        *Visit My GitHub To View Code*
-      </a>
       </footer>
     </div>
   </body>
