@@ -13,7 +13,9 @@ class SessionsController < ApplicationController
   end
 
   def destroy
-    session[:user_id] = nil
+    session.delete(:user_id)
+    @current_user = nil
+    #session[:user_id] = nil
     redirect_to login_path, notice: "Logged out"
   end
 

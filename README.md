@@ -1,6 +1,6 @@
 # Ceaseless DEMO CMS
 
-Welcome to Ceaseless DEMO CMS website. 
+Welcome to Ceaseless DEMO CMS website.
 
 Demo at: https://ceaseless-demo.herokuapp.com/.  Thank you for trying the demo.
 
