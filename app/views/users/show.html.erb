@@ -3,7 +3,18 @@
   <ul>
     <li><strong>Name: </strong><%= @user.name %></li>
     <li><strong>Email: </strong><%= @user.email %></li>
-    <li><%= link_to "Change Account Info", edit_user_path(@user) %></li>
+    <% if @user.posts.any? %>
+    <li>
+      <b>Total posts Submitted:</b>&ensp;
+      (<%= @user.posts.count %>)
+    </li>
+    </br>
+    <ol>
+      <%= render @posts %>
+    </ol>
+    </br>
+    <% end %>
     <li><%= link_to "New Post", new_post_path %></li>
+    <li><%= link_to "Change Account Info", edit_user_path(@user) %></li>
 </ul>
 </p>
