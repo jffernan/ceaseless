@@ -28,6 +28,7 @@
       <footer>
         <%= link_to "Back", root_path %> |
         <% if session[:user_id] %>
+          <%= link_to "New Post", new_post_path %>
           <%= link_to "Edit Account", edit_user_path(session[:user_id]) %> |
         <% else %>
           <%= link_to "Log In", login_path %> |

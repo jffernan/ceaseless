@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   
+  resources :posts
   root 'users#home' #home
   get '/about' => 'users#about'
   resources :users
