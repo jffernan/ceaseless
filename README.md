@@ -6,8 +6,9 @@ Demo at: https://ceaseless-demo.herokuapp.com/.  Thank you for trying the demo.
 
 This app was built using Ruby on Rails, a Ruby web framework, and followed MVC architecture and RESTful routing patterns. I also developed user authentication to allow for user signup and login processes.
 
-Contact: James Fernandez | Email: jffernan@comcast.net | Phone: (206) 658-5295
 This demo app was built to support the mission of Ceaseless http://www.ceaselessprayer.com/ for the glory of God to view code.
+
+Contact: James Fernandez | Email: jffernan@comcast.net | Phone: (206) 658-5295
 
 ## Contributing
 
